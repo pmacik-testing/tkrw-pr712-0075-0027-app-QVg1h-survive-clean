@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pcrn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0027-tenant/tkrw-pr712-0075-0027-app/devfile-sample-pcrn@sha256:c8f35ac54b9a57f8a78a7dac5a062bb3d7747c6e7a92f74f80e316c5d84f9ec5
+        name: my-nodejs
+        resources: {}
+status: {}
